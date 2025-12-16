@@ -27,7 +27,7 @@ jobs:
               git clone https://github.com/nilavan544/namma_samayal_backend.git
             fi
 
-            cd namma_samayal_backend || exit 1
+            cd  namma_samayal_backend|| exit 1
             git pull origin main
 
             echo "MONGO_URI=${{ secrets.MONGO_URI }}" > .env
@@ -36,4 +36,4 @@ jobs:
             npm install
             pm2 delete student-api || true
             pm2 start server.js --name student-api
-            pm2 save
+            pm2 save
