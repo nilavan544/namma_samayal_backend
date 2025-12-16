@@ -23,8 +23,7 @@ jobs:
           script: |
             cd /home/ubuntu || exit 1
 
-            if [ ! -d "namma_samayal_backend
-" ]; then
+            if [ ! -d "namma_samayal_backend" ]; then
               git clone https://github.com/nilavan544/namma_samayal_backend.git
             fi
 
